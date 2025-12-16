@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { motion, stagger, useAnimate } from 'motion/react';
-import { cn } from '@/src/lib/utils';
+import { cn } from '@/lib/utils';
 
 export const TextGenerateEffect = ({
   words,
@@ -39,7 +39,7 @@ export const TextGenerateEffect = ({
               key={word + idx}
               className={`${className} ${
                 idx > 3 ? 'text-purple-200' : 'text-orange-400'
-              }opacity-0`}
+              } opacity-50`}
               // className={className}
               style={{
                 filter: filter ? 'blur(10px)' : 'none',
@@ -55,8 +55,10 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={cn('font-bold', className)}>
-      <div className="mt-4">
-        <div className={className}>{renderWords()}</div>
+      <div className="my-4">
+        <div className={cn('leading-snug tracking-wide', className)}>
+          {renderWords()}
+        </div>
       </div>
     </div>
   );

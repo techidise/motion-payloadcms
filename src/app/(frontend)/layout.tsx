@@ -1,11 +1,13 @@
 import React from 'react';
 import './globals.css';
 import { ThemeProvider } from './provider';
+import NavBar from '@/components/main-components/NavBar';
 // import './styles.css';
 
 export const metadata = {
-  description: 'Motion Tutorial',
-  title: "We are using JS Mastery's Motion Tutorial to learn Motion.",
+  description: 'TechiDISE Studio',
+  title:
+    'We are a Product Design & Development Studio, based in Las Vegas Navada.',
 };
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
@@ -13,8 +15,9 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-black text-red-50 flex flex-col min-h-screen min-w-screen items-center justify-center overflow-hidden">
+      <body className="bg-black text-red-50 flex flex-col min-h-screen min-w-screen items-center justify-center">
         <main>
+          <NavBar />
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"

@@ -1,7 +1,10 @@
-import { cn } from '@/src/lib/utils';
+import { cn } from '@/lib/utils';
 import { Spotlight } from '../ui/Spotlight';
 import CircularText from '../react-bits/CircularText';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
+import Link from 'next/link';
+import MagicButton from '../ui/MagicButton';
+import { ArrowBigRight } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -31,32 +34,60 @@ const Hero = () => {
         />
         {/* Radial gradient for the container to give a faded look */}
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-transparent [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-        <div className="text-2xl">
-          <CircularText
-            text="TechiDISE*Studio*Website*"
+        <div className="text-9xl">
+          {/* <CircularText
+            text="DESIGN*BUILD*DEPLOY*"
             onHover="speedUp"
-            spinDuration={20}
-            className="text-blue-100"
-          />
+            spinDuration={10}
+            className="text-red-200 -mt-96 -z-10"
+          /> */}
         </div>
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.JS
+            <CircularText
+              text="DESIGN*BUILD*DEPLOY*"
+              onHover="speedUp"
+              spinDuration={10}
+              className="text-red-200 -z-10"
+            />
           </h2>
 
           <TextGenerateEffect
-            className="text-orange-300 text-center text-9xl md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into seamless Experiences"
+            className="text-rose-300 text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="TechiDISE Studio"
             filter={true}
             duration={2}
           />
 
-          <p className="text-center mb-4 text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Hi, I&apos;m Kwadwo, a Web Designer & FullStack Developer
+          <p className="text-red-50 text-center mb-4 text-sm mt-10 md:text-lg md:tracking-wider lg:text-2xl">
+            We are a creative{' '}
+            <span className="font-bold text-2xl text-rose-300">Web Design</span>{' '}
+            &{' '}
+            <span className="font-bold text-2xl text-rose-300">
+              Fullstack Development{' '}
+            </span>
+            Studio based in Las Vegas, NV. <br /> We help our clients develop
+            their{' '}
+            <span className="font-bold text-2xl text-rose-300">
+              Web Identity
+            </span>{' '}
+            and assist them with their{' '}
+            <span className="font-bold text-2xl text-rose-300">
+              Brand Strategy
+            </span>
+            .
           </p>
+
+          <Link href="about">
+            <MagicButton
+              title="Show My Work"
+              icon={<ArrowBigRight />}
+              position="right"
+            />
+          </Link>
         </div>
       </div>
     </div>
