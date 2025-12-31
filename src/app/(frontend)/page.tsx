@@ -1,4 +1,4 @@
-//=========> JS Mastery | Motion Crash Course | ["Bento Grid Section"] [44:14] <=========\\
+//=========> JS Mastery | Motion Crash Course | ["Bento Grid Section"] [46:05] <=========\\
 
 import { headers as getHeaders } from 'next/headers.js';
 import Image from 'next/image';

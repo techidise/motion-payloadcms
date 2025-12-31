@@ -57,7 +57,7 @@ const Hero = () => {
 
           <TextGenerateEffect
             className="text-rose-300 text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="TechiDISE Studio"
+            words="JunkABLE Studio"
             filter={true}
             duration={2}
           />
@@ -77,8 +77,8 @@ const Hero = () => {
             and assist them with their{' '}
             <span className="font-bold text-2xl text-rose-300">
               Brand Strategy
-            </span>
-            .
+            </span>{' '}
+            as it relates to their junk removal business.
           </p>
 
           <Link href="about">
