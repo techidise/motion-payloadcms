@@ -29,7 +29,7 @@ const Hero = () => {
             'absolute inset-0',
             '[background-size:40px_40px]',
             '[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]',
-            'dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]'
+            'dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]',
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
@@ -57,7 +57,7 @@ const Hero = () => {
 
           <TextGenerateEffect
             className="text-rose-300 text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="JunkABLE Studio"
+            words="TechiDISE Studio"
             filter={true}
             duration={2}
           />
@@ -76,9 +76,8 @@ const Hero = () => {
             </span>{' '}
             and assist them with their{' '}
             <span className="font-bold text-2xl text-rose-300">
-              Brand Strategy
+              Brand Strategy.
             </span>{' '}
-            as it relates to their junk removal business.
           </p>
 
           <Link href="about">
